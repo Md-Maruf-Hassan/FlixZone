@@ -76,10 +76,10 @@ export default function Navbar(){
                 <button onClick={logout} className="py-2 text-left">Logout</button>
               </>
             ) : (
-              <>
-                <Link to='/login' className="py-2">Sign In</Link>
-                <Link to='/signup' className="py-2">Sign Up</Link>
-              </>
+              // <>
+              //   {/* <Link to='/login' className="py-2">Sign In</Link>
+              //   <Link to='/signup' className="py-2">Sign Up</Link> */}
+              // </>
             )}
           </nav>
         </div>
