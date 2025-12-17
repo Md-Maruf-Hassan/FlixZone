@@ -56,8 +56,7 @@ export default function Navbar(){
             </div>
           ) : (
             <div className="hidden sm:flex gap-2">
-              {/* <Link to='/login' className="px-3 py-1 rounded border text-sm">Sign In</Link>
-              <Link to='/signup' className="px-3 py-1 rounded bg-brand text-sm">Sign Up</Link> */}
+              
             </div>
           )}
 
@@ -76,10 +75,7 @@ export default function Navbar(){
                 <button onClick={logout} className="py-2 text-left">Logout</button>
               </>
             ) : (
-              // <>
-              //   {/* <Link to='/login' className="py-2">Sign In</Link>
-              //   <Link to='/signup' className="py-2">Sign Up</Link> */}
-              // </>
+              
             )}
           </nav>
         </div>
