@@ -4,8 +4,11 @@ import { useNavigate } from 'react-router-dom'
 export default function Login(){
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  // const nav = useNavigate()
+  const nav = useNavigate()
 
+  const handleCreateAcount = () =>{
+    nav("/signup")
+  }
   
 
   return (
@@ -16,8 +19,7 @@ export default function Login(){
         <label className="block mb-4">Password<input value={password} onChange={e=>setPassword(e.target.value)} className="w-full p-2 rounded bg-gray-800" type="password" required /></label>
         <div className="flex gap-2">
           <button className="px-4 py-2 bg-emerald-600 hover:bg-emerald-900   rounded">Sign In</button>
-          <a className="px-4 py-2 text-blue-400 rounded hover:bg-blue-500 hover:text-amber-50" href="/signup">Create account</a>
-        </div>
+          <button className="px-4 py-2 text-blue-400 rounded hover:bg-blue-500 hover:text-amber-50" onClick={handleCreateAcount}>Create account</button>
       </form>
     </div>
   )
