@@ -19,7 +19,7 @@ export default function Login(){
         <label className="block mb-4">Password<input value={password} onChange={e=>setPassword(e.target.value)} className="w-full p-2 rounded bg-gray-800" type="password" required /></label>
         <div className="flex gap-2">
           <button className="px-4 py-2 bg-emerald-600 hover:bg-emerald-900   rounded">Sign In</button>
-          <button className="px-4 py-2 text-blue-400 rounded hover:bg-blue-500 hover:text-amber-50" onClick={handleCreateAcount}>Create account</button>
+          <button className="px-4 py-2 text-blue-400 rounded hover:bg-blue-500 hover:text-amber-50" onClick={handleCreateAcount}>Create account</button> </div> 
       </form>
     </div>
   )
