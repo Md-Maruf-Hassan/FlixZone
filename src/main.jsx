@@ -11,6 +11,11 @@ function Root(){
   },[])
   return (
     <>
+      {loading && (
+        <div className="splash">
+          <h1 className="animate-pulse">FlixZone</h1>
+        </div>
+      )}
       <App />
     </>
   )
